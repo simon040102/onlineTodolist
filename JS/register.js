@@ -19,6 +19,10 @@ function registerAPI(e) {
      if (registerPassword.value !== registerPasswordCheck.value){
         alert('請輸入正確密碼')
      }
+     if(registerPassword.value.length<6){
+      alert('密碼需大於六個字元')
+      return
+     }
   let obj = { user: {} };
   obj.user.email = registerEmail.value;
   obj.user.nickname = registerNickname.value;
