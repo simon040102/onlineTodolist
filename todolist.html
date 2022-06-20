@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+
+  <title>線上待辦事項服務</title>
+  <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+  <!-- <style>*{outline: 1px solid red;}</style> -->
+  <div class="todo-wrap">
+  <div class="container">
+    <div class="topbar">
+      <img class="title" src="images/title.svg" alt="">
+      <div class="top-sign">
+      <h2><span class="nickname"></span>的代辦</h2>
+      <a href="#" class="signOut">登出</a>
+      </div>
+    </div>
+  <div class="todo-content">
+    <div class="input">
+    <input type="text" class="text" placeholder="新增代辦事項">
+    <input type="button" class="save" value="">
+    </div>
+ <div class="check-list">
+   <ul class="select">
+      <li class="underline"><input  type="button" value="全部"></li>
+      <li><input type="button" value="待完成"></li>
+      <li><input type="button" value="已完成"></li>
+    </ul>
+  <ul class="list">
+  </ul>
+  <div class="bottom">
+    <div class="count"></div>
+  </div>
+</div>
+  </div>
+  
+  </div>
+  </div>
+  <!-- js -->
+  <script src="JS/jquery-3.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="JS/todolist.js"></script>
+
+</body>
+
+<!-- </html> -->
