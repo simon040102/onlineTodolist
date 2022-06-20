@@ -85,7 +85,7 @@ table {
   font-weight: bolder;
 }
 
-.title {
+.todo-title {
   height: 40px;
 }
 
@@ -312,6 +312,9 @@ table {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .todo-title {
+    height: 35px;
   }
 }
 

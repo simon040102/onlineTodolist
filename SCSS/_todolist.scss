@@ -19,7 +19,7 @@
     font-weight: bolder;
   }
 }
-.title{
+.todo-title{
   height: 40px;
 }
 .top-sign{
@@ -205,5 +205,8 @@
   .top-sign{
     width: 100%;
     justify-content: space-between;
+  }
+  .todo-title{
+    height: 35px;
   }
 }
