@@ -16,11 +16,17 @@ function match(e) {
 
 register.addEventListener('click', registerAPI);
 function registerAPI(e) {
+  let emailRule =
+    /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
      if (registerPassword.value !== registerPasswordCheck.value){
         alert('請輸入正確密碼')
      }
-     if(registerPassword.value.length<6){
+     if(registerPassword.value.length<5){
       alert('密碼需大於六個字元')
+      return
+     }
+     if(!emailRule.test(registerEmail.value)){
+      alert('Email格式不正確') 
       return
      }
   let obj = { user: {} };
