@@ -4,6 +4,14 @@ let registerPassword = document.querySelector('.register-password');
 let registerPasswordCheck = document.querySelector('.register-password-check');
 let checkPassword = document.querySelector('.check-result');
 let register = document.querySelector('.register-register');
+
+registerPasswordCheck.addEventListener('keydown', enter);
+function enter(e) {
+  if (e.keyCode !== 13) {
+    return;
+  }
+  registerAPI();
+}
 //輸入正確密碼
 registerPasswordCheck.oninput = match;
 function match(e) {

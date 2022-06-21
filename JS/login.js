@@ -31,14 +31,17 @@ function login(e) {
    }
   axios
     .post('https://todoo.5xcamp.us/users/sign_in', obj)
+    .catch(function (error) {
+     alert(error.response.data.message);
+     return
+    })
     .then(function (response) {
-      console.log(response);
       alert(response.data.message);
       let authorization = response.headers.authorization;
-      let nickname= response.data.nickname;
+      let nickname = response.data.nickname;
       localStorage.setItem('authorization', authorization);
       localStorage.setItem('nickname', nickname);
-       location.href = 'todolist.html';
+      location.href = 'todolist.html';
     });
 }
 //---------------登入畫面end---------------//
