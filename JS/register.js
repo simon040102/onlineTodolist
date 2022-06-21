@@ -35,6 +35,7 @@ function registerAPI(e) {
      }
      if(!emailRule.test(registerEmail.value)){
       alert('Email格式不正確') 
+      registerEmail.focus()
       return
      }
   let obj = { user: {} };
