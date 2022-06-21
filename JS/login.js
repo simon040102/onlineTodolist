@@ -29,7 +29,6 @@ function login(e) {
      alert('請輸入正確資訊');
      return
    }
-  console.log(obj);
   axios
     .post('https://todoo.5xcamp.us/users/sign_in', obj)
     .then(function (response) {
